@@ -1,0 +1,19 @@
+.material-table-container {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  .query-input {
+    padding: 4px;
+    width: 50vw;
+    margin: 12px 0;
+  }
+
+  .mat-table-wrapper {
+    flex: 1;
+  }
+
+  table {
+    width: 100%;
+  }
+}

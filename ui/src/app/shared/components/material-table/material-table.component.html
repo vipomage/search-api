@@ -1,0 +1,46 @@
+<div class="material-table-container">
+  <div>
+    <input
+      class="query-input"
+      placeholder="Query"
+      [formControl]="queryFormControl"
+    />
+  </div>
+
+  <div class="mat-table-wrapper mat-elevation-z8">
+    <table #table *ngIf="dataSource" mat-table [dataSource]="dataSource">
+      <!-- Position Column -->
+      <ng-container matColumnDef="recordId">
+        <th mat-header-cell *matHeaderCellDef>Record ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.recordId }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="project">
+        <th mat-header-cell *matHeaderCellDef>Project</th>
+        <td mat-cell *matCellDef="let element">{{ element.project }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="company">
+        <th mat-header-cell *matHeaderCellDef>Company</th>
+        <td mat-cell *matCellDef="let element">{{ element.company }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="role">
+        <th mat-header-cell *matHeaderCellDef>Role</th>
+        <td mat-cell *matCellDef="let element">{{ element.role }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>
