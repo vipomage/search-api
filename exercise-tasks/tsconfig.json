@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": false,
+    "pretty": true,
+    "charset": "utf-8"
+  },
+  "exclude": ["node_modules"]
+}

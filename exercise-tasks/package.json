@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "palindrome": "ts-node is-palindrome",
+    "largest-number": "ts-node largest-number",
+    "min-start-value": "ts-node min-start-val"
+  },
+  "author": "Eray Ismailov",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  }
+}
